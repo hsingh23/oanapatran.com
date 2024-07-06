@@ -1,191 +1,272 @@
 <!DOCTYPE html>
-<html lang="en"><head><base href="/index.html">
+<html lang="en">
+  <head>
     <title>Oana Patran - Healer, Dancer, Artist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="track" content="fou2fTk65oN4eavLi">
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="track" content="ML5bvtm0n0Pt8D9U9" />
+    <meta charset="UTF-8" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap");
 
+      :root {
+        --bg-color: #f8f5f2;
+        --text-color: #1a1a1a;
+        --accent-color: #8c7851;
+        --secondary-color: #d7c9aa;
+      }
+
+      @media (prefers-color-scheme: dark) {
         :root {
-            --bg-color: #f8f5f2;
-            --text-color: #1a1a1a;
-            --accent-color: #8c7851;
-            --secondary-color: #d7c9aa;
+          --bg-color: #1a1a1a;
+          --text-color: #f8f5f2;
+          --accent-color: #d7c9aa;
+          --secondary-color: #8c7851;
         }
+      }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #1a1a1a;
-                --text-color: #f8f5f2;
-                --accent-color: #d7c9aa;
-                --secondary-color: #8c7851;
-            }
-        }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+      header {
+        background-color: var(--accent-color);
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+      }
 
-        header {
-            background-color: var(--accent-color);
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
+      nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+      }
 
-        nav ul {
-            display: flex;
-            justify-content: space-around;
-            list-style-type: none;
-        }
+      nav ul li a {
+        color: var(--bg-color);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+      }
 
-        nav ul li a {
-            color: var(--bg-color);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: color 0.3s ease;
-        }
+      nav ul li a:hover,
+      nav ul li a:focus {
+        color: var(--secondary-color);
+      }
 
-        nav ul li a:hover, nav ul li a:focus {
-            color: var(--secondary-color);
-        }
+      main {
+        max-width: 800px;
+        margin: 6rem auto 2rem;
+        padding: 0 1rem;
+      }
 
+      h1,
+      h2 {
+        font-family: "Playfair Display", serif;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+      }
+
+      h2 {
+        font-size: 2rem;
+        border-bottom: 2px solid var(--accent-color);
+        padding-bottom: 0.5rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: 768px) {
         main {
-            max-width: 800px;
-            margin: 6rem auto 2rem;
-            padding: 0 1rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
         }
+      }
 
-        h1, h2 {
-            font-family: 'Playfair Display', serif;
-            margin-bottom: 1rem;
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-
-        h1 {
-            font-size: 2.5rem;
-            color: var(--accent-color);
+        to {
+          opacity: 1;
         }
+      }
 
-        h2 {
-            font-size: 2rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-        }
+      .fade-in {
+        animation: fadeIn 1s ease-in;
+      }
 
-        p {
-            margin-bottom: 1rem;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 1rem;
-        }
-
-        @media (min-width: 768px) {
-            main {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 2rem;
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
+      @media (prefers-reduced-motion: reduce) {
         .fade-in {
-            animation: fadeIn 1s ease-in;
+          animation: none;
         }
-
-        @media (prefers-reduced-motion: reduce) {
-            .fade-in {
-                animation: none;
-            }
-        }
+      }
     </style>
 
-<!-- Google tag (gtag.js) --> <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3YXFV0DC7W"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-3YXFV0DC7W'); </script></head>
-<body>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-3YXFV0DC7W"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-3YXFV0DC7W");
+    </script>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-    <li><a href="/index.html" class="selected">Home</a></li>
-    <li><a href="/index.html">Fine Art</a></li>
-    <li><a href="/index.html">Healing</a></li>
-    <li><a href="/index.html">Dance</a></li>
-</ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#bio" class="selected">Home</a></li>
+          <li><a href="https://fineart.oanapatran.com">Fine Art</a></li>
+          <li><a href="#healing">Healing</a></li>
+          <li><a href="#dance">Dance</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-    <section id="bio" class="fade-in">
+      <section id="bio" class="fade-in">
         <h1>Oana Patran</h1>
-        <img src="oana-portrait.jpg" alt="Portrait of Oana Patran" width="400" height="600">
-        <p>Oana Patran is a multifaceted artist, healer, and dancer hailing from Romania and currently based in Chicago. As a modern-day witch, she combines her diverse talents to create transformative experiences and art that speaks to the soul.</p>
-        <p>Drawing from her rich cultural heritage and spiritual practices, Oana's work spans multiple disciplines, each infused with her unique energy and vision.</p>
-    </section>
+        <img
+          src="oana-portrait.jpg"
+          alt="Portrait of Oana Patran"
+          width="400"
+          height="600"
+        />
+        <p>
+          Oana Patran is a multifaceted artist, healer, and dancer hailing from
+          Romania and currently based in Chicago. As a modern-day witch, she
+          combines her diverse talents to create transformative experiences and
+          art that speaks to the soul.
+        </p>
+        <p>
+          Drawing from her rich cultural heritage and spiritual practices,
+          Oana's work spans multiple disciplines, each infused with her unique
+          energy and vision.
+        </p>
+      </section>
 
-    <section id="fine-art" class="fade-in">
-        <h2><a href="/index.html" style="text-decoration: none; color: var(--accent-color); transition: color 0.3s ease, border-bottom 0.3s ease; border-bottom: 2px solid transparent;">Fine Art</a></h2>
-        <img src="oana-artwork.jpg" alt="A piece of Oana Patran's fine art" width="400" height="300">
-        <p>Oana's fine art is a visual representation of her inner world, blending traditional techniques with modern sensibilities. Her paintings and sculptures often incorporate elements of Romanian folklore, mysticism, and personal symbolism.</p>
-        <p>Through her art, Oana explores themes of transformation, spirituality, and the interconnectedness of all things. Each piece is imbued with her unique energy, creating a powerful and immersive experience for the viewer.</p>
-    </section>
+      <section id="fine-art" class="fade-in">
+        <h2>Fine Art</h2>
+        <img
+          src="oana-artwork.jpg"
+          alt="A piece of Oana Patran's fine art"
+          width="400"
+          height="300"
+        />
+        <p>
+          Oana's fine art is a visual representation of her inner world,
+          blending traditional techniques with modern sensibilities. Her
+          paintings and sculptures often incorporate elements of Romanian
+          folklore, mysticism, and personal symbolism.
+        </p>
+        <p>
+          Through her art, Oana explores themes of transformation, spirituality,
+          and the interconnectedness of all things. Each piece is imbued with
+          her unique energy, creating a powerful and immersive experience for
+          the viewer.
+        </p>
+      </section>
 
-    <section id="healing" class="fade-in">
+      <section id="healing" class="fade-in">
         <h2>Healing</h2>
-        <img src="oana-healing.jpg" alt="Oana Patran during a healing session" width="400" height="300">
-        <p>As a healer, Oana draws upon ancient wisdom and modern techniques to facilitate transformation and growth. Her practice incorporates elements of energy work, herbalism, and intuitive guidance.</p>
-        <p>Oana's healing sessions are tailored to each individual, addressing physical, emotional, and spiritual imbalances. Her gentle yet powerful approach has helped many find peace, clarity, and renewed vitality.</p>
-    </section>
+        <img
+          src="oana-healing.jpg"
+          alt="Oana Patran during a healing session"
+          width="400"
+          height="300"
+        />
+        <p>
+          As a healer, Oana draws upon ancient wisdom and modern techniques to
+          facilitate transformation and growth. Her practice incorporates
+          elements of energy work, herbalism, and intuitive guidance.
+        </p>
+        <p>
+          Oana's healing sessions are tailored to each individual, addressing
+          physical, emotional, and spiritual imbalances. Her gentle yet powerful
+          approach has helped many find peace, clarity, and renewed vitality.
+        </p>
+      </section>
 
-    <section id="dance" class="fade-in">
+      <section id="dance" class="fade-in">
         <h2>Dance</h2>
-        <img src="oana-dancing.jpg" alt="Oana Patran performing a dance" width="400" height="300">
-        <p>Oana's approach to dance is deeply rooted in expression and healing. Her performances blend traditional Romanian folk dance with contemporary movements, creating a mesmerizing fusion that captivates audiences.</p>
-        <p>Through dance, Oana explores themes of identity, spirituality, and the connection between body and soul. Her movements are a physical manifestation of her inner world, inviting viewers to experience a journey of emotion and energy.</p>
-    </section>
-</main>
+        <img
+          src="oana-dancing.jpg"
+          alt="Oana Patran performing a dance"
+          width="400"
+          height="300"
+        />
+        <p>
+          Oana's approach to dance is deeply rooted in expression and healing.
+          Her performances blend traditional Romanian folk dance with
+          contemporary movements, creating a mesmerizing fusion that captivates
+          audiences.
+        </p>
+        <p>
+          Through dance, Oana explores themes of identity, spirituality, and the
+          connection between body and soul. Her movements are a physical
+          manifestation of her inner world, inviting viewers to experience a
+          journey of emotion and energy.
+        </p>
+      </section>
+    </main>
 
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
+      });
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fade-in');
-                }
-            });
-        }, {
-            threshold: 0.1
-        });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("fade-in");
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
 
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
-        });
+      document.querySelectorAll("section").forEach((section) => {
+        observer.observe(section);
+      });
     </script>
-</body></html>
+  </body>
+</html>
