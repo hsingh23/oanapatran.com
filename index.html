@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="track" content="ML5bvtm0n0Pt8D9U9" />
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.min.css" />
+    <script src="https://get.mavo.io/mavo.min.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;700&display=swap");
 
@@ -44,7 +46,7 @@
         position: fixed;
         width: 100%;
         top: 0;
-        z-index: 1000;
+        /* z-index: 1000; */
       }
 
       nav ul {
@@ -129,10 +131,7 @@
     </style>
 
     <!-- Google tag (gtag.js) -->
-    <script
-      async=""
-      src="https://www.googletagmanager.com/gtag/js?id=G-3YXFV0DC7W"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3YXFV0DC7W"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -142,7 +141,7 @@
       gtag("config", "G-3YXFV0DC7W");
     </script>
   </head>
-  <body>
+  <body mv-plugins="tinymce" mv-app="oanapatran" mv-storage="https://github.com/hsingh23/oanapatran.com" mv-bar="export no-login" mv-upload-url=https://oanapatran.com/ mv-upload-path="pictures">
     <header>
       <nav>
         <ul>
@@ -155,90 +154,61 @@
     </header>
 
     <main>
-      <section id="bio" class="fade-in">
+      <sections mv-list="sections">
+        <section mv-list-item class="fade-in" id="[sectionId]">
+          <h1 property="sectionTitle">Oana Patran</h1>
+          <img property="sectionImage" width="400" height="600" mv-upload-path="pictures" />
+          <div property="sectionContent" class="tinymce">Content</div>
+        </section>
+      </sections>
+      <!-- <section id="bio" class="fade-in">
         <h1>Oana Patran</h1>
-        <img
-          src="oana-portrait.jpg"
-          alt="Portrait of Oana Patran"
-          width="400"
-          height="600"
-        />
+        <img src="oana-portrait.jpg" alt="Portrait of Oana Patran" width="400" height="600" />
         <p>
-          Oana Patran is a multifaceted artist, healer, and dancer hailing from
-          Romania and currently based in Chicago. As a modern-day witch, she
-          combines her diverse talents to create transformative experiences and
-          art that speaks to the soul.
+          Oana Patran is a multifaceted artist, healer, and dancer hailing from Romania and currently based in Chicago. As a modern-day witch, she combines her diverse talents to
+          create transformative experiences and art that speaks to the soul.
         </p>
-        <p>
-          Drawing from her rich cultural heritage and spiritual practices,
-          Oana's work spans multiple disciplines, each infused with her unique
-          energy and vision.
-        </p>
+        <p>Drawing from her rich cultural heritage and spiritual practices, Oana's work spans multiple disciplines, each infused with her unique energy and vision.</p>
       </section>
 
       <section id="fine-art" class="fade-in">
         <h2>Fine Art</h2>
-        <img
-          src="oana-artwork.jpg"
-          alt="A piece of Oana Patran's fine art"
-          width="400"
-          height="300"
-        />
+        <img src="oana-artwork.jpg" alt="A piece of Oana Patran's fine art" width="400" height="300" />
         <p>
-          Oana's fine art is a visual representation of her inner world,
-          blending traditional techniques with modern sensibilities. Her
-          paintings and sculptures often incorporate elements of Romanian
-          folklore, mysticism, and personal symbolism.
+          Oana's fine art is a visual representation of her inner world, blending traditional techniques with modern sensibilities. Her paintings and sculptures often incorporate
+          elements of Romanian folklore, mysticism, and personal symbolism.
         </p>
         <p>
-          Through her art, Oana explores themes of transformation, spirituality,
-          and the interconnectedness of all things. Each piece is imbued with
-          her unique energy, creating a powerful and immersive experience for
-          the viewer.
+          Through her art, Oana explores themes of transformation, spirituality, and the interconnectedness of all things. Each piece is imbued with her unique energy, creating a
+          powerful and immersive experience for the viewer.
         </p>
       </section>
 
       <section id="healing" class="fade-in">
         <h2>Healing</h2>
-        <img
-          src="oana-healing.jpg"
-          alt="Oana Patran during a healing session"
-          width="400"
-          height="300"
-        />
+        <img src="oana-healing.jpg" alt="Oana Patran during a healing session" width="400" height="300" />
         <p>
-          As a healer, Oana draws upon ancient wisdom and modern techniques to
-          facilitate transformation and growth. Her practice incorporates
-          elements of energy work, herbalism, and intuitive guidance.
+          As a healer, Oana draws upon ancient wisdom and modern techniques to facilitate transformation and growth. Her practice incorporates elements of energy work, herbalism,
+          and intuitive guidance.
         </p>
         <p>
-          Oana's healing sessions are tailored to each individual, addressing
-          physical, emotional, and spiritual imbalances. Her gentle yet powerful
-          approach has helped many find peace, clarity, and renewed vitality.
+          Oana's healing sessions are tailored to each individual, addressing physical, emotional, and spiritual imbalances. Her gentle yet powerful approach has helped many find
+          peace, clarity, and renewed vitality.
         </p>
       </section>
 
       <section id="dance" class="fade-in">
         <h2>Dance</h2>
-        <img
-          src="oana-dancing.jpg"
-          alt="Oana Patran performing a dance"
-          width="400"
-          height="300"
-        />
+        <img src="oana-dancing.jpg" alt="Oana Patran performing a dance" width="400" height="300" />
         <p>
-          Oana's approach to dance is deeply rooted in expression and healing.
-          Her performances blend traditional Romanian folk dance with
-          contemporary movements, creating a mesmerizing fusion that captivates
-          audiences.
+          Oana's approach to dance is deeply rooted in expression and healing. Her performances blend traditional Romanian folk dance with contemporary movements, creating a
+          mesmerizing fusion that captivates audiences.
         </p>
         <p>
-          Through dance, Oana explores themes of identity, spirituality, and the
-          connection between body and soul. Her movements are a physical
-          manifestation of her inner world, inviting viewers to experience a
-          journey of emotion and energy.
+          Through dance, Oana explores themes of identity, spirituality, and the connection between body and soul. Her movements are a physical manifestation of her inner world,
+          inviting viewers to experience a journey of emotion and energy.
         </p>
-      </section>
+      </section> -->
     </main>
 
     <script>
