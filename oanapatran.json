@@ -34,9 +34,15 @@
 			"sectionTitle": "Cool",
 			"sectionImage": "https://oanapatran.com/pictures/image.jpg",
 			"sectionContent": "<p><strong>Just pretty <em>cool</em></strong></p>"
+		},
+		{
+			"sectionTitle": "Hi",
+			"sectionImage": "https://oanapatran.com/pictures/pasted-image-1722837434931.jpeghe",
+			"sectionContent": "<p>Hello</p>"
 		}
 	],
 	"galleryImages": [
+		{},
 		{}
 	]
 }
