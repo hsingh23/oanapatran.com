@@ -32,7 +32,29 @@
 		}
 	],
 	"galleryImages": [
-		{},
-		{}
+		{
+			"galleryImage": "pictures/1000022802.jpg"
+		},
+		{
+			"galleryImage": "pictures/1000022818.jpg"
+		},
+		{
+			"galleryImage": "pictures/1000023082.jpg"
+		},
+		{
+			"galleryImage": "pictures/1000024113.jpg"
+		},
+		{
+			"galleryImage": "pictures/1Q7A1009.jpg"
+		},
+		{
+			"galleryImage": "pictures/IMG_4130.jpeg"
+		},
+		{
+			"galleryImage": "pictures/IMG_5587.jpeg"
+		},
+		{
+			"galleryImage": "galleryImages/healing.jpeg"
+		}
 	]
 }
